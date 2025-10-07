@@ -1,0 +1,103 @@
+.about-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.error {
+  color: #dc2626;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.product-list li {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  transition: transform 0.2s;
+}
+
+.product-list li:hover {
+  transform: scale(1.02);
+}
+
+.no-products {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
