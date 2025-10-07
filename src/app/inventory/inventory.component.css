@@ -1,0 +1,137 @@
+.inventory-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  padding-bottom: 140px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.inventory-container h2 {
+  text-align: center;
+  color: #0a3d62;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #0a3d62;
+  box-shadow: 0 0 6px rgba(10, 61, 98, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #0a3d62;
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px;
+  font-size: 15px;
+}
+
+th {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.expired td {
+  background-color: #ffe6e6 !important;
+  color: #c0392b;
+  font-weight: 500;
+}
+
+.near-expiration td {
+  background-color: #fff4e1 !important;
+  color: #e67e22;
+  font-weight: 500;
+}
+
+tbody tr:not(.expired):not(.near-expiration):hover {
+  background-color: #eaf4ff;
+  transition: background 0.3s ease;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+  }
+
+  tbody td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #0a3d62;
+  }
+}
