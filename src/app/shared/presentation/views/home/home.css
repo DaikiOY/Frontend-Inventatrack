@@ -1,0 +1,132 @@
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
+  padding: 50px 10%;
+  color: #1e3a8a;
+  animation: fadeIn 0.6s ease-in-out;
+  min-height: 100vh;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.subtitle {
+  color: #475569;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.summary h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.detail {
+  font-size: 14px;
+  color: #475569;
+}
+
+.warning .number {
+  color: #f59e0b;
+}
+
+.stock .number {
+  color: #ef4444;
+}
+
+.quick-actions {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quick-actions h2 {
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.tips {
+  text-align: center;
+}
+
+.tips h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+  color: #334155;
+}
+
+.tips li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
