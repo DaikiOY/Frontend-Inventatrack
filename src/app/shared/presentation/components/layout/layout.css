@@ -1,0 +1,44 @@
+mat-toolbar {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb, #3b82f6);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 0 20px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+mat-toolbar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+a[mat-button] {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a[mat-button]:hover {
+  color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+a[mat-button].active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+app-language-switcher {
+  margin-left: 10px;
+}
